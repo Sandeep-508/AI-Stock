@@ -1,0 +1,560 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AI Stock</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css"
+        integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
+        integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="./assets/css/root.css">
+</head>
+
+<body>
+
+    <header class="d-flex flex-column position-relative min-vh-lg-100 bgImg_header">
+
+        <div class="position-absolute pos-bottom-layer w-100">
+            <img src="./assets/images/PNG/bottom-layer-hero-sec.png" alt="bottom layer of black color" class="w-100">
+        </div>
+
+        <nav class="nav_brdr">
+            <div class="container_hero back_color my-nav">
+                <div class="d-flex align-items-center justify-content-between">
+                    <div class="cursor">
+                        <p class="fm fw-700 fs-48 lh-64 text-white mb-0">AI STOCK</p>
+                    </div>
+                    <button class="signUp fm fw-700 fs-16 lh-24 text-black">Sign Up</button>
+                </div>
+            </div>
+        </nav>
+
+        <section
+            class="d-flex align-items-center justify-content-center flex-column flex-grow-1 mt-lg-5 mt-4 mb-media-hero">
+            <div class="container_hero w-100">
+                <div class="d-flex align-items-center justify-content-center">
+                    <p class="fm fw-700 fs-52 lh-62 text-white max-w-hero-main-text text-center">Dive into the Explosive
+                        Momentum of
+                        2024 with the <span class="text_lg">Top
+                            7</span> Fastest-Growing <span class="text_lg">AI Stocks!</span></p>
+                </div>
+                <div class="d-flex align-items-center justify-content-center my-hero-sub-text">
+                    <p class="fm fw-400 fs-16 lh-24 text-white opacity-80 max-w-sub-text-hero text-center">Major AI
+                        Stocks such as Microsoft and Nvidia have surged
+                        over 80%
+                        in the past year. This giants
+                        are expected to grow
+                        130.66% in 2024</p>
+                </div>
+                <div class="row">
+                    <div class="col-lg-7 px-0 d-flex align-items-center justify-content-center flex-column">
+                        <span class="d-flex align-items-center justify-content-center col-img-after">
+                            <img src="./assets/images/PNG/hero-sec-warren-buffet-image.png" alt="warren buffet image"
+                                class="w-h-hero-img">
+                        </span>
+                        <p class="fm fw-700 fs-18 lh-26 text-white text-center my-hero-sec-text">Due to extremely high
+                            demand for
+                            media
+                            coverage,
+                            registration
+                            closes in</p>
+                        <div class="row text-center w-100 align-items-center justify-content-center">
+                            <div class="col countdown-item">
+                                <span id="days" class="display-4 fm fw-700 fs-52 lh-75 text-white">00</span>
+                                <div class="fm fw-700 fs-18 lh-26 text-white mt-4">Days</div>
+                            </div>
+                            <div class="col countdown-item">
+                                <span id="hours" class="display-4 fm fw-700 fs-52 lh-75 text-white">00</span>
+                                <div class="fm fw-700 fs-18 lh-26 text-white mt-4">Hours</div>
+                            </div>
+                            <div class="col countdown-item">
+                                <span id="minutes" class="display-4 fm fw-700 fs-52 lh-75 text-white">00</span>
+                                <div class="fm fw-700 fs-18 lh-26 text-white mt-4">Minutes</div>
+                            </div>
+                            <div class="col countdown-item">
+                                <span id="seconds" class="display-4 fm fw-700 fs-52 lh-75 text-white">00</span>
+                                <div class="fm fw-700 fs-18 lh-26 text-white mt-4">Seconds</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="col-lg-5">
+                        <div class="form_box">
+                            <p class="fm fw-600 fs-28 lh-32 text-white text-center">This Is The Right Time to Invest In
+                                AI Stocks
+                            </p>
+                            <p class="fm fw-400 fs-16 lh-24 text-white text-center">In a matter of minutes, one of our
+                                AI mentors
+                                will contact
+                                you, No Experience Required!
+                            </p>
+                            <form class="d-flex flex-column align-items-center justify-content-center">
+                                <input type="text" placeholder="First Name"
+                                    class="w-100 p-3 fm fw-400 fs-16 lh-24 text-black place-holder">
+                                <input type="text" placeholder="Last Name"
+                                    class="w-100 p-3 fm fw-400 fs-16 lh-24 text-black place-holder">
+                                <input type="email" placeholder="Email"
+                                    class="w-100 p-3 fm fw-400 fs-16 lh-24 text-black place-holder">
+                                <input type="number" placeholder="Phone Number"
+                                    class="w-100 p-3 fm fw-400 fs-16 lh-24 text-black place-holder">
+                            </form>
+                        </div>
+                    </div> -->
+                    <div class="col-lg-5 d-flex align-items-center justify-content-center flex-column">
+                        <div class="form_box p-4 rounded shadow-lg">
+                            <p class="fm fw-600 fs-28 lh-32 text-white text-center">This Is The Right Time to Invest In
+                                AI Stocks</p>
+                            <p class="fm fw-400 fs-16 lh-24 text-white text-center">
+                                In a matter of minutes, one of our AI mentors will contact you, No Experience Required!
+                            </p>
+                            <form class="d-flex flex-column align-items-center justify-content-center w-100">
+                                <input type="text" placeholder="First Name"
+                                    class="form-control mb-3 p-3 fm fw-400 fs-16 lh-24">
+                                <input type="text" placeholder="Last Name"
+                                    class="form-control mb-3 p-3 fm fw-400 fs-16 lh-24">
+                                <input type="email" placeholder="Email"
+                                    class="form-control mb-3 p-3 fm fw-400 fs-16 lh-24">
+                                <div class="input-group w-100 mb-3">
+                                    <div class="input-group-prepend">
+                                        <select class="custom-select back-select p-3 text-black min-h-select">
+                                            <option value="+91" class="fm fw-400 fs-16 lh-24 text-black" selected>+91
+                                            </option>
+                                            <option value="+1" class="fm fw-400 fs-16 lh-24 text-black">+1</option>
+                                        </select>
+                                    </div>
+                                    <input type="number" placeholder="Phone Number"
+                                        class="form-control p-3 fm fw-400 fs-16 lh-24">
+                                </div>
+                                <button type="submit" class="form_btn p-3 fw-700 fs-16 lh-24 text-black">Get
+                                    Started</button>
+                            </form>
+                        </div>
+                        <p class="fm fw-700 fs-20 lh-28 text-white text-center mb-0 mt-3">Only 3 Spots Left</p>
+                    </div>
+                </div>
+        </section>
+
+    </header>
+
+    <main class="overflow-hidden">
+
+        <!-- slider section -->
+
+        <section class="py-slider-sec bg-black">
+            <div class="container-fluid slick-slider">
+
+                <div class="slider-item d-flex align-items-center justify-content-center gap-3">
+                    <div class="d-flex align-items-center justify-content-center">
+                        <img src="./assets/images/SVG/slider-person-image-1.svg" alt="random person images">
+                    </div>
+                    <div class="d-flex flex-column align-items-start justify-content-center">
+                        <p class="fm fw-700 fs-20 lh-28 text-white mb-0">Ray</p>
+                        <p class="fm fw-400 fs-16 lh-24 text-white mt-2 mb-0">Profit: <span
+                                class="text_lg">$4,490</span>
+                        </p>
+                        <p class="fm fw-400 fs-16 lh-24 text-white mb-0">Current Balance: $9,840</p>
+                    </div>
+                </div>
+
+                <div class="slider-item d-flex align-items-center justify-content-center gap-3">
+                    <div class="d-flex align-items-center justify-content-center">
+                        <img src="./assets/images/SVG/slider-person-image-1.svg" alt="random person images">
+                    </div>
+                    <div class="d-flex flex-column align-items-start justify-content-center">
+                        <p class="fm fw-700 fs-20 lh-28 text-white mb-0">Ray</p>
+                        <p class="fm fw-400 fs-16 lh-24 text-white mt-2 mb-0">Profit: <span
+                                class="text_lg">$4,490</span>
+                        </p>
+                        <p class="fm fw-400 fs-16 lh-24 text-white mb-0">Current Balance: $9,840</p>
+                    </div>
+                </div>
+
+                <div class="slider-item d-flex align-items-center justify-content-center gap-3">
+                    <div class="d-flex align-items-center justify-content-center">
+                        <img src="./assets/images/SVG/slider-person-image-1.svg" alt="random person images">
+                    </div>
+                    <div class="d-flex flex-column align-items-start justify-content-center">
+                        <p class="fm fw-700 fs-20 lh-28 text-white mb-0">Ray</p>
+                        <p class="fm fw-400 fs-16 lh-24 text-white mt-2 mb-0">Profit: <span
+                                class="text_lg">$4,490</span>
+                        </p>
+                        <p class="fm fw-400 fs-16 lh-24 text-white mb-0">Current Balance: $9,840</p>
+                    </div>
+                </div>
+
+                <div class="slider-item d-flex align-items-center justify-content-center gap-3">
+                    <div class="d-flex align-items-center justify-content-center">
+                        <img src="./assets/images/SVG/slider-person-image-1.svg" alt="random person images">
+                    </div>
+                    <div class="d-flex flex-column align-items-start justify-content-center">
+                        <p class="fm fw-700 fs-20 lh-28 text-white mb-0">Ray</p>
+                        <p class="fm fw-400 fs-16 lh-24 text-white mt-2 mb-0">Profit: <span
+                                class="text_lg">$4,490</span>
+                        </p>
+                        <p class="fm fw-400 fs-16 lh-24 text-white mb-0">Current Balance: $9,840</p>
+                    </div>
+                </div>
+
+                <div class="slider-item d-flex align-items-center justify-content-center gap-3">
+                    <div class="d-flex align-items-center justify-content-center">
+                        <img src="./assets/images/SVG/slider-person-image-1.svg" alt="random person images">
+                    </div>
+                    <div class="d-flex flex-column align-items-start justify-content-center">
+                        <p class="fm fw-700 fs-20 lh-28 text-white mb-0">Ray</p>
+                        <p class="fm fw-400 fs-16 lh-24 text-white mt-2 mb-0">Profit: <span
+                                class="text_lg">$4,490</span>
+                        </p>
+                        <p class="fm fw-400 fs-16 lh-24 text-white mb-0">Current Balance: $9,840</p>
+                    </div>
+                </div>
+
+                <div class="slider-item d-flex align-items-center justify-content-center gap-3">
+                    <div class="d-flex align-items-center justify-content-center">
+                        <img src="./assets/images/SVG/slider-person-image-1.svg" alt="random person images">
+                    </div>
+                    <div class="d-flex flex-column align-items-start justify-content-center">
+                        <p class="fm fw-700 fs-20 lh-28 text-white mb-0">Ray</p>
+                        <p class="fm fw-400 fs-16 lh-24 text-white mt-2 mb-0">Profit: <span
+                                class="text_lg">$4,490</span>
+                        </p>
+                        <p class="fm fw-400 fs-16 lh-24 text-white mb-0">Current Balance: $9,840</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- accounts -->
+
+        <section class="py-accounts bg-black">
+            <div class="container_hero d-flex align-items-center justify-content-center flex-column">
+                <div class="d-flex align-items-center justify-content-center">
+                    <p class="fm max-w-accounts-main-text fw-700 fs-48 lh-60 text-white text-center">Understanding <span
+                            class="text_lg">Leveraged</span>
+                        Accounts and <span class="text_lg">Buying Power</span></p>
+                </div>
+                <div class="d-flex align-items-center justify-content-center mb-media-account-text">
+                    <p class="fm max-w-accounts-main-text fw-400 fs-16 lh-24 mb-0 text-white text-center opacity-80">
+                        Trading
+                        with
+                        leveraged accounts
+                        in CFDs provides traders with increased buying power, enabling
+                        them
+                        to attain superior
+                        results across various markets. By amplifying potential returns and accessing additional
+                        capital,
+                        traders can capitalize
+                        on market opportunities more effectively, enhancing their overall trading performance.</p>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 d-flex align-items-center justify-content-center flex-column">
+                        <div class="account_boxes d-flex align-items-start gap-3 w-100">
+                            <div class="d-flex align-items-center justify-content-center">
+                                <img src="./assets/images/PNG/accounts-sec-image-1.png" alt="random person images"
+                                    class="w-100 h-100">
+                            </div>
+                            <p class="fm fw-400 fs-16 lh-24 text-white"><span class="fw-800 fst-italic">John
+                                    invested</span> $250 without leverage, so his
+                                buying power was $250, and John achieved
+                                returns of $40.</p>
+                        </div>
+                        <div class="account-pos-stats d-flex flex-column align-items-start w-100">
+                            <p class="text_diff_lg fm fw-700 fs-24 lh-30">Non - Leveraged Accounts</p>
+                            <div class="d-flex align-items-center justify-content-between w-100">
+                                <p class="mb-0 fm fw-400 fs-16 lh-24 opacity-70">John invested</p>
+                                <p class="mb-0 fm fw-700 fs-16 lh-24" style="color: #020507;">$250</p>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between w-100 mt-2">
+                                <p class="mb-0 fm fw-400 fs-16 lh-24 opacity-70">Leverage</p>
+                                <p class="mb-0 fm fw-700 fs-16 lh-24" style="color: #020507;">0</p>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between w-100 mt-2">
+                                <p class="mb-0 fm fw-400 fs-16 lh-24 opacity-70">Buying Power</p>
+                                <p class="mb-0 fm fw-700 fs-16 lh-24" style="color: #020507;">$250</p>
+                            </div>
+                            <div class="stock-view-img d-flex align-items-center justify-content-center mt-4">
+                                <img src="./assets/images/SVG/stock-view-img.svg" alt="stock market view"
+                                    class="w-100 h-100">
+                            </div>
+                            <div class="d-flex align-items-center justify-content-start gap-1 earning-box w-100">
+                                <p class="fm fw-700 fst-italic fs-32 lh-42 mb-0" style="color: #15AA15;">$40</p>
+                                <p class="fm fw-600 fst-italic fs-18 lh-24 mb-0" style="color: #15AA15;">Potential
+                                    Earnings
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 d-flex align-items-center justify-content-center flex-column">
+                        <div class="account_boxes d-flex align-items-start gap-3 w-100">
+                            <div class="d-flex align-items-center justify-content-center">
+                                <img src="./assets/images/PNG/accounts-sec-image-1.png" alt="random person images"
+                                    class="w-100 h-100">
+                            </div>
+                            <p class="fm fw-400 fs-16 lh-24 text-white"><span class="fw-800 fst-italic">John
+                                    invested</span> $250 without leverage, so his
+                                buying power was $250, and John achieved
+                                returns of $40.</p>
+                        </div>
+                        <div class="account-pos-stats d-flex flex-column align-items-start w-100">
+                            <p class="text_diff_lg fm fw-700 fs-24 lh-30">Non - Leveraged Accounts</p>
+                            <div class="d-flex align-items-center justify-content-between w-100">
+                                <p class="mb-0 fm fw-400 fs-16 lh-24 opacity-70">John invested</p>
+                                <p class="mb-0 fm fw-700 fs-16 lh-24" style="color: #020507;">$250</p>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between w-100 mt-2">
+                                <p class="mb-0 fm fw-400 fs-16 lh-24 opacity-70">Leverage</p>
+                                <p class="mb-0 fm fw-700 fs-16 lh-24" style="color: #020507;">0</p>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between w-100 mt-2">
+                                <p class="mb-0 fm fw-400 fs-16 lh-24 opacity-70">Buying Power</p>
+                                <p class="mb-0 fm fw-700 fs-16 lh-24" style="color: #020507;">$250</p>
+                            </div>
+                            <div class="stock-view-img d-flex align-items-center justify-content-center mt-4">
+                                <img src="./assets/images/SVG/stock-view-img.svg" alt="stock market view"
+                                    class="w-100 h-100">
+                            </div>
+                            <div class="d-flex align-items-center justify-content-start gap-1 earning-box w-100">
+                                <p class="fm fw-700 fst-italic fs-32 lh-42 mb-0" style="color: #15AA15;">$40</p>
+                                <p class="fm fw-600 fst-italic fs-18 lh-24 mb-0" style="color: #15AA15;">Potential
+                                    Earnings
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="btns fm fw-700 fs-16 lh-24" style="color: #010101;">Maximize Your Profit</button>
+                <p class="mb-0 fm fw-400 fs-16 lh-24 text-white opacity-70 mt-3">With Leveraged Accounts and Enhanced
+                    Buying
+                    Power Today!</p>
+            </div>
+        </section>
+
+        <!-- top 7 stocks -->
+
+        <section class="bg-black">
+            <div class="d-flex align-items-center gap-4">
+                <div class="line"></div>
+                <div class="d-flex align-items-center flex-column justify-content-center">
+                    <p class="fm fw-700 fs-70 lh-86 text-white text-center mb-0 text-nowrap">Top 7</p>
+                    <p class="fm fw-700 fs-48 lh-60 text_lg text-center text-nowrap mb-0">AI Stocks</p>
+                </div>
+                <div class="line"></div>
+            </div>
+            <div class="container_hero py-company-sec-first">
+                <div class="row">
+                    <div class="col-lg-6 d-flex flex-column align-items-start justify-content-center">
+                        <div class="d-flex flex-column align-items-start justify-content-center max-w-col-stocks w-100">
+                            <p class="fm fw-700 fs-36 lh-46 text-white">AI GPU <span class="text_lg">1 year 228%</span>
+                                Growth </p>
+                            <p class="fm fw-400 fs-16 lh-24 text-white opacity-70 my-media-stock-text">NVIDIA
+                                Corporation, a
+                                powerhouse in GPU
+                                technology and AI innovation, offers investors
+                                compelling opportunities. With
+                                dominance in gaming and data center markets, NVIDIA stands poised for growth...</p>
+                            <button class="btns fm fw-700 fs-16 lh-24" style="color: #010101;">Read More</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 d-flex align-items-center justify-content-end">
+                        <div class="max-w-image">
+                            <img src="./assets/images/SVG/nvidia_img.svg" alt="nvidia image" class="w-100 h-100">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row flex-lg-row-reverse flex-column py-company-sec">
+                    <div class="col-lg-6 d-flex flex-column align-items-start justify-content-center">
+                        <div class="d-flex flex-column align-items-start justify-content-center max-w-col-stocks w-100">
+                            <p class="fm fw-700 fs-36 lh-46 text-white">AI GPU <span class="text_lg">1 year 228%</span>
+                                Growth </p>
+                            <p class="fm fw-400 fs-16 lh-24 text-white opacity-70 my-media-stock-text">NVIDIA
+                                Corporation, a
+                                powerhouse in GPU
+                                technology and AI innovation, offers investors
+                                compelling opportunities. With
+                                dominance in gaming and data center markets, NVIDIA stands poised for growth...</p>
+                            <button class="btns fm fw-700 fs-16 lh-24" style="color: #010101;">Read More</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 d-flex align-items-center justify-content-start">
+                        <div class="max-w-image">
+                            <img src="./assets/images/SVG/co-pilot-svg.svg" alt="co-pilot-svg image"
+                                class="w-100 h-100">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 d-flex flex-column align-items-start justify-content-center">
+                        <div class="d-flex flex-column align-items-start justify-content-center max-w-col-stocks w-100">
+                            <p class="fm fw-700 fs-36 lh-46 text-white">AI GPU <span class="text_lg">1 year 228%</span>
+                                Growth </p>
+                            <p class="fm fw-400 fs-16 lh-24 text-white opacity-70 my-media-stock-text">NVIDIA
+                                Corporation, a
+                                powerhouse in GPU
+                                technology and AI innovation, offers investors
+                                compelling opportunities. With
+                                dominance in gaming and data center markets, NVIDIA stands poised for growth...</p>
+                            <button class="btns fm fw-700 fs-16 lh-24" style="color: #010101;">Read More</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 d-flex align-items-center justify-content-end">
+                        <div class="max-w-image">
+                            <img src="./assets/images/SVG/nvidia_img.svg" alt="nvidia image" class="w-100 h-100">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row flex-lg-row-reverse flex-column py-company-sec">
+                    <div class="col-lg-6 d-flex flex-column align-items-start justify-content-center">
+                        <div class="d-flex flex-column align-items-start justify-content-center max-w-col-stocks w-100">
+                            <p class="fm fw-700 fs-36 lh-46 text-white">AI GPU <span class="text_lg">1 year 228%</span>
+                                Growth </p>
+                            <p class="fm fw-400 fs-16 lh-24 text-white opacity-70 my-media-stock-text">NVIDIA
+                                Corporation, a
+                                powerhouse in GPU
+                                technology and AI innovation, offers investors
+                                compelling opportunities. With
+                                dominance in gaming and data center markets, NVIDIA stands poised for growth...</p>
+                            <button class="btns fm fw-700 fs-16 lh-24" style="color: #010101;">Read More</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 d-flex align-items-center justify-content-start">
+                        <div class="max-w-image">
+                            <img src="./assets/images/SVG/co-pilot-svg.svg" alt="co-pilot-svg image"
+                                class="w-100 h-100">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 d-flex flex-column align-items-start justify-content-center">
+                        <div class="d-flex flex-column align-items-start justify-content-center max-w-col-stocks w-100">
+                            <p class="fm fw-700 fs-36 lh-46 text-white">AI GPU <span class="text_lg">1 year 228%</span>
+                                Growth </p>
+                            <p class="fm fw-400 fs-16 lh-24 text-white opacity-70 my-media-stock-text">NVIDIA
+                                Corporation, a
+                                powerhouse in GPU
+                                technology and AI innovation, offers investors
+                                compelling opportunities. With
+                                dominance in gaming and data center markets, NVIDIA stands poised for growth...</p>
+                            <button class="btns fm fw-700 fs-16 lh-24" style="color: #010101;">Read More</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 d-flex align-items-center justify-content-end">
+                        <div class="max-w-image">
+                            <img src="./assets/images/SVG/nvidia_img.svg" alt="nvidia image" class="w-100 h-100">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row flex-lg-row-reverse flex-column py-company-sec">
+                    <div class="col-lg-6 d-flex flex-column align-items-start justify-content-center">
+                        <div class="d-flex flex-column align-items-start justify-content-center max-w-col-stocks w-100">
+                            <p class="fm fw-700 fs-36 lh-46 text-white">AI GPU <span class="text_lg">1 year 228%</span>
+                                Growth </p>
+                            <p class="fm fw-400 fs-16 lh-24 text-white opacity-70 my-media-stock-text">NVIDIA
+                                Corporation, a
+                                powerhouse in GPU
+                                technology and AI innovation, offers investors
+                                compelling opportunities. With
+                                dominance in gaming and data center markets, NVIDIA stands poised for growth...</p>
+                            <button class="btns fm fw-700 fs-16 lh-24" style="color: #010101;">Read More</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 d-flex align-items-center justify-content-start">
+                        <div class="max-w-image">
+                            <img src="./assets/images/SVG/co-pilot-svg.svg" alt="co-pilot-svg image"
+                                class="w-100 h-100">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 d-flex flex-column align-items-start justify-content-center">
+                        <div class="d-flex flex-column align-items-start justify-content-center max-w-col-stocks w-100">
+                            <p class="fm fw-700 fs-36 lh-46 text-white">AI GPU <span class="text_lg">1 year 228%</span>
+                                Growth </p>
+                            <p class="fm fw-400 fs-16 lh-24 text-white opacity-70 my-media-stock-text">NVIDIA
+                                Corporation, a
+                                powerhouse in GPU
+                                technology and AI innovation, offers investors
+                                compelling opportunities. With
+                                dominance in gaming and data center markets, NVIDIA stands poised for growth...</p>
+                            <button class="btns fm fw-700 fs-16 lh-24" style="color: #010101;">Read More</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 d-flex align-items-center justify-content-end">
+                        <div class="max-w-image">
+                            <img src="./assets/images/SVG/nvidia_img.svg" alt="nvidia image" class="w-100 h-100">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+        integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <script>
+        $('.slick-slider').slick({
+            dots: false,
+            infinite: true,
+            speed: 300,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 0,
+            pauseOnHover: true,
+            nextArrow: false,
+            prevArrow: false,
+            variableWidth: true,
+            speed: 3000,
+            cssEase: 'linear',
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 1,
+                        infinite: true,
+                        dots: true
+                    }
+                },
+                {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+            ]
+        });
+    </script>
+
+    <script src="./assets/js/app.js"></script>
+</body>
+
+</html>

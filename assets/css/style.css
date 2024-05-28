@@ -1,0 +1,302 @@
+/* <----------------------------------------------------------- NAVBAR ----------------------------------------------------------------> */
+
+.bgImg_header {
+    background-image: url("../images/PNG/Hero-sec-bg-img.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.signUp {
+    padding: 12px 24px;
+    background: var(--lg-navBtn);
+    border: 1px solid var(--color-white);
+    border-radius: 4px;
+}
+
+.my-nav {
+    margin-top: 12px;
+    margin-bottom: 13px;
+}
+
+.nav_brdr {
+    position: relative;
+}
+
+.nav_brdr::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 0;
+    padding: 0 0 3px 0;
+    background: var(--navBorder);
+    -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none;
+}
+
+
+/* main text section */
+
+.text_lg {
+    background: var(--lg-navBtn);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.my-hero-sub-text {
+    margin-top: 28px;
+    margin-bottom: 39px;
+}
+
+.max-w-hero-main-text {
+    max-width: 958px;
+}
+
+.opacity-80 {
+    opacity: 80%;
+}
+
+
+.max-w-sub-text-hero {
+    max-width: 685px;
+}
+
+.col-img-after {
+    position: relative;
+    max-width: 624px;
+}
+
+.col-img-after::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 7px;
+    padding: 3px;
+    background: var(--lg-navBtn);
+    -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none;
+}
+
+.w-h-hero-img {
+    max-width: 624px;
+}
+
+.countdown-item {
+    margin: 0 10px;
+    background: #FFFFFF01;
+    backdrop-filter: blur(20px);
+    max-width: 128px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    min-height: 128px;
+}
+
+.my-hero-sec-text {
+    margin-top: 20px;
+    margin-bottom: 24px;
+}
+
+/* .form_box {
+    max-width: 388px;
+    background: #FFFFFF12;
+    position: relative;
+    padding: 20px;
+} */
+
+.form_box {
+    position: relative;
+    background: rgba(255, 255, 255, 0.07);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    max-width: 388px;
+    width: 100%;
+}
+
+.form_box p {
+    margin-bottom: 20px;
+}
+
+.back-select {
+    background: var(--color-white);
+}
+
+.custom-select {
+    max-width: 100px;
+}
+
+.form-control {
+    background: var(--color-white);
+    border: none;
+}
+
+.input-group-prepend .custom-select {
+    border: none;
+    background: #EBECF0;
+}
+
+.input-group-prepend .custom-select {
+    border-top-left-radius: 0.25rem;
+    border-bottom-left-radius: 0.25rem;
+}
+
+.form_btn {
+    width: 100%;
+    border: 1px solid var(--color-white);
+    background: var(--lg-navBtn);
+    border-radius: 4px;
+}
+
+.min-h-select {
+    min-height: 56px;
+}
+
+/* end */
+
+.form_box::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 8px;
+    padding: 2px;
+    background: var(--lg-navBtn);
+    -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none;
+}
+
+.place-holder::placeholder {
+    color: var(--black-color);
+}
+
+.pos-bottom-layer {
+    left: 0;
+    bottom: 0;
+}
+
+.mb-media-hero {
+    margin-bottom: 58px;
+}
+
+
+/* <----------------------------------------------------------- Slider Section ----------------------------------------------------------------> */
+
+.py-slider-sec {
+    padding-top: 44px;
+    padding-bottom: 200px;
+}
+
+.slider-item {
+    padding: 20px 72px 20px 20px;
+}
+
+.slick-slide {
+    margin: 0 27px;
+}
+
+.slick-list {
+    margin: 0 -27px;
+}
+
+
+
+/* <----------------------------------------------------------- Accounts ----------------------------------------------------------------> */
+.opacity-70 {
+    opacity: 70%;
+}
+
+.py-accounts {
+    padding-top: 200px;
+    padding-bottom: 180px;
+}
+
+.py-company-sec-first {
+    padding-top: 80px;
+    padding-bottom: 150px;
+}
+
+.mb-media-account-text {
+    margin-bottom: 60px;
+}
+
+.line {
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(91.31deg, #00FFE1 0.25%, #7E34DC 28.47%, #AEAEAE 50.45%, rgba(110, 93, 246, 0) 95.53%);
+}
+
+.text_diff_lg {
+    background: var(--account-sec-text-lg);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.max-w-accounts-main-text {
+    max-width: 946px;
+}
+
+.account_boxes {
+    max-width: 524px;
+    padding: 25px 50px 157px 25px;
+    border-radius: 15px;
+    background: var(--lg-navBtn);
+}
+
+.account-pos-stats {
+    max-width: 471px;
+    border-radius: 15px;
+    border: 1px solid var(--color-white);
+    padding: 20px;
+    background: var(--color-white);
+    position: relative;
+    top: -70px;
+}
+
+.stock-view-img {
+    background: #00000008;
+    padding: 16px;
+    border-radius: 10px;
+}
+
+.earning-box {
+    background: var(--color-white);
+    box-shadow: 0px 0px 11.1px 0px var(--light-black-clr);
+    border-radius: 10px;
+    margin-top: 25px;
+    padding: 8px 0 8px 8px;
+}
+
+.btns {
+    border: 1px solid var(--color-white);
+    background: var(--lg-navBtn);
+    padding: 12px 24px;
+}
+
+.my-media-stock-text {
+    margin-top: 16px;
+    margin-bottom: 40px;
+}
+
+.max-w-col-stocks {
+    max-width: 546px;
+}
+
+.py-company-sec {
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+
+.max-w-image {
+    max-width: 502px;
+}
