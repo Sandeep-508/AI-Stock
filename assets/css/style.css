@@ -300,3 +300,108 @@
 .max-w-image {
     max-width: 502px;
 }
+
+/* <----------------------------------------------------------- Accounts ----------------------------------------------------------------> */
+
+.pb-work {
+    padding-bottom: 151px;
+}
+
+.max-w-work-sec {
+    max-width: 891px;
+}
+
+.mt-media-work-text {
+    margin-top: 33px;
+}
+
+/* timeline */
+
+
+.timeline_work>div {
+    max-width: 716px;
+    margin: auto;
+}
+
+.timeline_work>div>div {
+    /* border-top: 2px dashed; */
+    /* border-color: var(--color-white) !important; */
+    margin: 0;
+    padding: 50px;
+}
+
+.timeline_work>div>.after-border:nth-child(odd) {
+    position: relative;
+}
+
+.timeline_work>div>.after-border:nth-child(odd)::after {
+    border-left: 2px dashed;
+    border-top-left-radius: 147px;
+    border-bottom-left-radius: 162px;
+    margin-right: 13px;
+    padding-right: 0;
+    content: "";
+    position: absolute;
+    inset: 0;
+    padding: 3px 0 3px 0;
+    background: var(--navBorder);
+    -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none;
+}
+
+.timeline_work>div>div:nth-child(even) {
+    position: relative;
+}
+
+.timeline_work>div>div:nth-child(even)::after {
+    border-right: 2px dashed;
+    border-top-right-radius: 147px;
+    border-bottom-right-radius: 162px;
+    margin-right: 13px;
+    padding-right: 0;
+    content: "";
+    position: absolute;
+    inset: 0;
+    padding: 0 0 3px 0;
+    background: var(--navBorder);
+    -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none;
+}
+
+/* .timeline_work>div>p:first-child {
+    border-top: 0;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+} */
+.timeline_work>div>div:last-child {
+    position: relative;
+}
+
+.timeline_work>div>div:last-child::after {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    border-left: 2px dashed;
+    border-top-left-radius: 147px;
+    border-bottom-left-radius: 162px;
+    margin-right: 13px;
+    padding-right: 0;
+    content: "";
+    position: absolute;
+    inset: 0;
+    padding: 0 0 3px 0;
+    background: var(--navBorder);
+    -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none;
+}
