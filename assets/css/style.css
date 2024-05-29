@@ -509,3 +509,55 @@
     margin-top: 54px;
     margin-bottom: 30px;
 }
+
+/* <----------------------------------------------------------- Form section ----------------------------------------------------------------> */
+
+
+.pt-faq {
+    padding-top: 150px;
+}
+
+/* <----------- Accordion -------------------------------> */
+
+.brdr {
+    position: relative;
+}
+
+.brdr::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    padding: 0 0 1px 0;
+    background: var(--navBorder);
+    -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none;
+}
+
+.disp_text {
+    display: none;
+    max-width: 786px;
+    min-height: 75px;
+}
+
+.accoridon_items {
+    max-width: 831px;
+    min-height: 28px;
+}
+
+.svg_icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    border-radius: 4px;
+    background: linear-gradient(171.68deg, #00FFE1 39.97%, #6E5DF6 107.69%);
+}
+
+.pe-media-disp-text {
+    padding-right: 113px;
+}
