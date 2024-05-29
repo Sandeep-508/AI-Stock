@@ -316,35 +316,54 @@
 }
 
 /* timeline */
-
+.timeline_work {
+    margin-top: 80px;
+}
 
 .timeline_work>div {
-    max-width: 716px;
+    max-width: 800px;
     margin: auto;
+    position: relative;
 }
 
 .timeline_work>div>div {
-    /* border-top: 2px dashed; */
-    /* border-color: var(--color-white) !important; */
     margin: 0;
     padding: 50px;
 }
 
-.timeline_work>div>.after-border:nth-child(odd) {
+.max-w-timeline-box-2 {
+    max-width: 540px;
+}
+
+.max-w-timeline-box-1 {
+    max-width: 333px;
+}
+
+.max-w-timeline-box-3 {
+    max-width: 506px;
+}
+
+
+/* <----------------------------------------------------------- Stats Section ----------------------------------------------------------------> */
+
+.stats_box {
+    max-width: 270px;
+}
+
+.circle_stats {
+    border-radius: 50%;
+    width: 270px;
+    height: 270px;
     position: relative;
 }
 
-.timeline_work>div>.after-border:nth-child(odd)::after {
-    border-left: 2px dashed;
-    border-top-left-radius: 147px;
-    border-bottom-left-radius: 162px;
-    margin-right: 13px;
-    padding-right: 0;
+.circle_stats::after {
     content: "";
     position: absolute;
     inset: 0;
-    padding: 3px 0 3px 0;
-    background: var(--navBorder);
+    border-radius: 50%;
+    padding: 8px;
+    background: var(--lg-navBtn);
     -webkit-mask:
         linear-gradient(#fff 0 0) content-box,
         linear-gradient(#fff 0 0);
@@ -353,21 +372,45 @@
     pointer-events: none;
 }
 
-.timeline_work>div>div:nth-child(even) {
+.mt-stats-text {
+    margin-top: 80px;
+}
+
+
+/* <----------------------------------------------------------- investment section ----------------------------------------------------------------> */
+
+.py-trading {
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+
+.svg_box_invest {
+    padding: 14px;
+    background: #FFFFFF0A;
+    border-radius: 4px;
+}
+
+.mt-svg-box {
+    margin-top: 32px;
+}
+
+.max-w-invest-box {
+    max-width: 240px;
+    padding: 45px 20px 45px 20px;
+}
+
+.max-w-invest-box:hover {
+    background: #FFFFFF0A;
     position: relative;
 }
 
-.timeline_work>div>div:nth-child(even)::after {
-    border-right: 2px dashed;
-    border-top-right-radius: 147px;
-    border-bottom-right-radius: 162px;
-    margin-right: 13px;
-    padding-right: 0;
+.max-w-invest-box:hover::after {
     content: "";
     position: absolute;
     inset: 0;
-    padding: 0 0 3px 0;
-    background: var(--navBorder);
+    border-radius: 12px;
+    padding: 1px;
+    background: var(--lg-navBtn);
     -webkit-mask:
         linear-gradient(#fff 0 0) content-box,
         linear-gradient(#fff 0 0);
@@ -376,27 +419,35 @@
     pointer-events: none;
 }
 
-/* .timeline_work>div>p:first-child {
-    border-top: 0;
-    border-top-right-radius: 0;
-    border-top-left-radius: 0;
-} */
-.timeline_work>div>div:last-child {
+.mt-media-invest-sec-text {
+    margin-top: 100px;
+}
+
+/* <----------------------------------------------------------- trading section ----------------------------------------------------------------> */
+
+.max-w-trading-text {
+    max-width: 576px;
+}
+
+.max-w-sub-text-trading {
+    max-width: 530px;
+}
+
+
+/* <----------------------------------------------------------- Form section ----------------------------------------------------------------> */
+
+.form_box {
+    max-width: 558px;
+    padding: 24px 0px 0px 0px;
     position: relative;
 }
 
-.timeline_work>div>div:last-child::after {
-    border-bottom-right-radius: 0;
-    border-bottom-left-radius: 0;
-    border-left: 2px dashed;
-    border-top-left-radius: 147px;
-    border-bottom-left-radius: 162px;
-    margin-right: 13px;
-    padding-right: 0;
+.form_box::after {
     content: "";
     position: absolute;
     inset: 0;
-    padding: 0 0 3px 0;
+    border-radius: 8px;
+    padding: 3px;
     background: var(--navBorder);
     -webkit-mask:
         linear-gradient(#fff 0 0) content-box,

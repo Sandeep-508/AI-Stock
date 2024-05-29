@@ -114,6 +114,7 @@
     --fs-72: 72px;
     --fs-79: 79px;
     --fs-80: 80px;
+    --fs-88: 88px;
     --fs-100: 100px;
     --fs-108: 108px;
     --fs-157: 157px;
@@ -297,6 +298,10 @@
 
 .fs-12 {
     font-size: var(--fs-12);
+}
+
+.fs-88 {
+    font-size: var(--fs-88);
 }
 
 .light_white_clr {
@@ -638,3 +643,25 @@ a {
         width: 100%;
     }
 }
+
+@media (min-width: 768px) {
+    .timeline_work>div::after {
+        content: "";
+        position: absolute;
+        top: 27px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-image: url("../images/PNG/timeline_line.png");
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 100%;
+    }
+
+    .max-w-timeline-box-3 {
+        margin-left: 90px;
+    }
+}
+
+@media (max-width: 767.9px) {}
